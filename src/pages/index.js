@@ -1,7 +1,7 @@
-import Layout from './componets/Layout/Layout'
+import Layout from '../componets/Layout/Layout'
 import styles from '../styles/Home.module.css'
-import Searchinput from './componets/Searchinput/Searchinput'
-import CountryTable from './componets/CountryTable/CountryTable'
+import Searchinput from '../componets/Searchinput/Searchinput'
+import CountryTable from '../componets/CountryTable/CountryTable'
 
 export default function Home({countries}) {
   return (
