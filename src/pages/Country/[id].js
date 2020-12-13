@@ -24,8 +24,6 @@ const Country = ({ country }) => {
     getBorders();
   }, []);
 
-  console.log(borders);
-
   return (
     <Layout title={country.name}>
       <div className={styles.container}>

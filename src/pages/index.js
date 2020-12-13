@@ -1,8 +1,7 @@
-import Link from 'next/link'
 import Layout from './componets/Layout/Layout'
 import styles from '../styles/Home.module.css'
 import Searchinput from './componets/Searchinput/Searchinput'
-import CountryTable from './componets/CounterTable/CountryTable'
+import CountryTable from './componets/CountryTable/CountryTable'
 
 export default function Home({countries}) {
   return (
