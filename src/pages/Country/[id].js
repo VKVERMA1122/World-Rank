@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Layout from "../../componets/Layout/Layout";
 import styles from "./Country.module.css";
+import Image from 'next/image'
 
 const getCountry = async (id) => {
   const res = await fetch(`https://restcountries.eu/rest/v2/alpha/${id}`);
@@ -29,7 +30,7 @@ const Country = ({ country }) => {
       <div className={styles.container}>
         <div className={styles.container_left}>
           <div className={styles.overview_panel}>
-            <img src={country.flag} alt={country.name}></img>
+            <Image width={1000} height={800}   src={country.flag} alt={country.name}></Image>
 
             <h1 className={styles.overview_name}>{country.name}</h1>
             <div className={styles.overview_region}>{country.region}</div>
@@ -94,7 +95,7 @@ const Country = ({ country }) => {
               <div className={styles.details_panel_borders_container}>
                 {borders.map(({ flag, name }) => (
                   <div className={styles.details_panel_borders_country}>
-                    <img src={flag} alt={name}></img>
+                    <Image width={1000} height={800}  src={flag} alt={name}></Image>
 
                     <div className={styles.details_panel_borders_name}>
                       {name}

@@ -5,6 +5,7 @@ import {
 } from "@material-ui/icons";
 import { useState } from "react";
 import styles from "./CountryTable.module.css";
+import Image from 'next/image'
 
 const orderBy = (countries, value, direction) => {
   if (direction === "asc") {
@@ -108,7 +109,7 @@ const CountriesTable = ({ countries }) => {
           <a>
             <div className={styles.row}>
               <div className={styles.flag}>
-                <img src={country.flag} alt={country.name} />
+                <Image width={1000} height={800} src={country.flag} alt={country.name} />
               </div>
               <div className={styles.name}>{country.name}</div>
 
