@@ -109,7 +109,7 @@ const CountriesTable = ({ countries }) => {
           <a>
             <div className={styles.row}>
               <div className={styles.flag}>
-                <Image width={1000} height={800} src={country.flag} alt={country.name} />
+                <Image layout="responsive" width={1000} height={800} src={country.flag} alt={country.name} />
               </div>
               <div className={styles.name}>{country.name}</div>
 
